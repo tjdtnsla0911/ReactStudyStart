@@ -6,9 +6,13 @@ import MyComponent from './MyComponent';
 
 
 const App = () => {
+  
   return (
-    <MyComponent></MyComponent>
+  
+    <MyComponent>리엑트</MyComponent>
+  
   );
+
 };
 
 export default App;
