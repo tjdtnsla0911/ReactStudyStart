@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.react{
+  background-color: black;
+  color: aqua;
+  font-size: 48px;
+  font-weight: 48px;
+  padding: 1%;
+  /* margin: 16px; */
+}
