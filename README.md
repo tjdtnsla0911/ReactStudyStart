@@ -11,6 +11,6 @@ react 기본 3000포트잡고 run 실행
 ###
 2022-05-08
 <br/>
-class Compent 와  function Compent 공부중
+class Component 와  function Component 공부중 (ES6)
 
 ###
