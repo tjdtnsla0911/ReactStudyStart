@@ -9,7 +9,7 @@ const App = () => {
   
   return (
   
-    <MyComponent>리엑트</MyComponent>
+    <MyComponent name='문자열 ' favoriteNumber={5}>리엑트</MyComponent>
   
   );
 
