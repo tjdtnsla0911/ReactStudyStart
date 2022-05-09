@@ -20,4 +20,6 @@ props는 처음 받을때 props 이름 바꿔도 되는듯
 클래스명.defaultProps로 default 값 설정가능
 <br/>
 const {name , children} = props; 같은방법으로 name 매핑해서 한번에주기도 가능 (render전에)
+<br/>
+.gitignore 추가함 일단 node module FIle은 전부 숨김
 ###
