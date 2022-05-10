@@ -36,8 +36,7 @@ isRequired를 사용하여 필수값으로 지정도 가능합니다.
 ###
 ###
 2022-05-10
-<br/>
-<h2>status_studys 프로젝트를 참고하세요!</h2>
+<h4>status_studys 프로젝트를 참고하세요!</h4>
 State와 setState에 대해서 알아 봤습니다!
 <br/>
 이걸로 state에 있는 값을 변경할수 있습니다. 
