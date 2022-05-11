@@ -28,24 +28,25 @@ class Counter extends Component {
                 10일때마다 증가 : {fixedNumber}<br/>
                 <button onClick={()=>{
                     //밑에꺼 두개해봤자 값은 1씩오른다
-                    this.setState(preState2 => {
-                        console.log('preState2 = ',preState2);
+                    this.setState(preState => {
+                        console.log('preState = ',preState);
                         return{
-                 
-                            number : preState2.number + 1
-                        }
+                            number : preState.number + 1
+                        } 
                     });
                     //()를 씌워서 즉시리턴 시킴
                     this.setState(prevState => ({
                         number : prevState.number + 1
                     }));
+
                     //이게 들어가버리면 바로 다시 1씩오름
                     this.setState({number : number + 1 })
 
-                    if(number % 10 == 0 && number != 0){
-                        this.setState({fixedNumber : fixedNumber +1})
+                      if(number % 10 === 0 && number !== 0){
+                         this.setState({fixedNumber : fixedNumber +1})
                     }
-                    }}>+1 증가</button>
+                    
+                }}>+1 증가</button>
             </div>
         );
     }
