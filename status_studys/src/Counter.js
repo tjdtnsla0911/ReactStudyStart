@@ -19,28 +19,19 @@ class Counter extends Component {
     // }
 
     render() {
-        console.log(this);
+        console.log('this = ',this);
         const {number , fixedNumber} = this.state;
 
         return (
             <div>
                 현재값 : <b>{number} </b><br/>
                 10일때마다 증가 : {fixedNumber}<br/>
-                <button onClick={()=>{
-                    //밑에꺼 두개해봤자 값은 1씩오른다
-                    this.setState(preState => {
-                        console.log('preState = ',preState);
-                        return{
-                            number : preState.number + 1
-                        } 
-                    });
-                    //()를 씌워서 즉시리턴 시킴
-                    this.setState(prevState => ({
-                        number : prevState.number + 1
-                    }));
 
-                    //이게 들어가버리면 바로 다시 1씩오름
-                    this.setState({number : number + 1 })
+                <button onClick={()=>{
+                    console.log('호출@@@@');
+                    this.setState({
+                        number : number + 1
+                    }, ()=> { console.log('setState 호출'); console.log('this.stats = ',this.state);});
 
                       if(number % 10 === 0 && number !== 0){
                          this.setState({fixedNumber : fixedNumber +1})
