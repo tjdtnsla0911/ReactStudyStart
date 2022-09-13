@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+/*내가추가한거*/
+.reacts {
+  background: blue;
+  font-size: 48px;
+  font-weight: bold;
+
+}
 
 .App-logo {
   height: 40vmin;
