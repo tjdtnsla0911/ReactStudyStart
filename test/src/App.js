@@ -18,7 +18,8 @@ class App extends Component {
   
   render() {
     return (
-          <MyComponents1 name={3} 
+          <MyComponents1 
+          // name={3} 
           favoriteNumber={44444}
           >리엑트</MyComponents1>
     );
